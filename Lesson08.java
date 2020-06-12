@@ -1,6 +1,7 @@
 class Lesson08 {
     public static void main(String[] args){
         String[] arr;
+        // String[] arr = {"sato","suzuki","takahashi"};
         arr = new String[3];
 
         arr[0]="sato";
