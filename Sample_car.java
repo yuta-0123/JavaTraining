@@ -19,6 +19,11 @@ class Sample_car {
         System.out.println("speed up");
     }
 
+    void rightOn(){
+        right = true;
+        System.out.println(owner + "の車：周囲が暗くなった");
+    }
+
     // コンストラクタ(インスタンス化と同時に生成。)
     // フィールドの初期値を設定。
     // メソッド名はクラス名と同じ
@@ -30,16 +35,13 @@ class Sample_car {
     // フィールドの値を未登録のものを対応
 
     Sample_car(){
-        System.out.println("constructor");
 
         //変数の準備と代入処理
-
         carModel = "未登録";
         owner = "未登録";
         color = "未登録";
         speed = 0;
         right = false;
-        System.out.println("=====================================");
         // フィールドの代入が終わった時が、インスタンス化の終了
     }
 
@@ -48,12 +50,10 @@ class Sample_car {
     // 好きな値をフィールドに詰める
 
     Sample_car(String cm ,String on,String cl, int sp ,boolean rt){
-        System.out.println("constructor");
         carModel = cm;
         owner = on;
         color = cl;
         speed = sp;
         right = rt;
-        System.out.println("=====================================");
     }
 }

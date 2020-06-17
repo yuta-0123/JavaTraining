@@ -24,5 +24,7 @@ class Sample_drive {
         System.out.println("chocoCar.owner : "+ chocoCar.owner);
         System.out.println("=======================");
 
+        chocoCar.accelerator();
+
     }
 }
