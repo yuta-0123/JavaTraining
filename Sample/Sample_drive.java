@@ -23,7 +23,6 @@ class Sample_drive {
         System.out.println("chocoCar.carModel : "+ chocoCar.carModel);
         System.out.println("chocoCar.owner : "+ chocoCar.owner);
         System.out.println("=======================");
-
         chocoCar.accelerator();
 
     }
