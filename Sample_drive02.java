@@ -3,11 +3,10 @@ class Sample_drive02 {
     // Sample_driveの役割：インスタンス化する為
 
     public static void main (String[] args){
-  
-        Sample_car02 chocoCar = new Sample_car02();
 
-        // パターン２：引数あり
-        // ５つのデータをいれたもの
+        // 左辺：インスタンスをつくる
+        // 右辺：コンストラクタを呼び出す
+        Sample_car02 chocoCar = new Sample_car02();
         Sample_car02 mocoCar = new Sample_car02("aaa","bbb","RED",100,true);
         Sample_car02 pochiCar = new Sample_car02("koko","zzz","BLUE",80,true);
 

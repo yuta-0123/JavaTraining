@@ -1,5 +1,8 @@
 class Sample_car02 {
 
+    // フィールドにある５つの変数
+    // フィールド：クラスの直下に置かれた変数
+    // <=>ローカル変数(スコープがコンストラクタの中に限るもの)
     String carModel;
     String owner;
     String color;
@@ -28,14 +31,30 @@ class Sample_car02 {
 
 
     // 引数ありのコンストラクタ
-    Sample_car02(String cm ,String on,String cl, int sp ,boolean rt){
+    // コンストラクタの中の仮引数
+    // 仮引数とは、引数を受け取る為の変数
+
+    // 仮引数には、フィールドと被らない値が望ましい
+    Sample_car02(String cl,String owner,String color, int speed  ,boolean right){
         // this:自分のクラスのコンストラクタを呼び出す。
         // this():コンストラクタからコンストラクタを呼ぶときに使う。
+        // コンストラクタの処理は、値をフィールドに突っ込むこと。
+
+        // 深いコンストラクタ：呼び出す側のコンストラクタ
+        // 深いコンストラクタから処理が行われていく
+        // そのため、コンストラクタの呼び出し先頭に記述する
+
         this();
-        carModel = cm;
-        owner = on;
-        color = cl;
-        speed = sp;
-        right = rt;
+
+        // 左辺は箱：右辺は値。
+        // this.変数名はフィールドを指す。
+        this.carModel = cl;
+        owner = owner;
+        color = color;
+        speed = speed ;
+        right = right;
+
+        // ローカル内で呼び出しがあった時は、ローカルにある変数が優先される。
+
     }
 }
